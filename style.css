@@ -1,18 +1,5 @@
 body{
-  float:left;
+  float: left;
+  background-color: lightblue;
   width: 460px;
-  background-color: white;
-  border-radius: 50px;
-}
-h1{
-  background-color: lightblue;
-}
-h2{
-  background-color: lightblue;
-}
-p{
-  background-color: lightblue;
-}
-li{
-  background-color: lightblue;
 }
