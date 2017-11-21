@@ -7,5 +7,5 @@ if (!$ssh->login('pi', 'rotta123')) {
 }
 
 echo $ssh->exec('pwd');
-echo $ssh->exec('ls');
+echo $ssh->exec('ifconfig');
 ?>
