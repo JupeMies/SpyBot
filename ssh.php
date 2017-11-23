@@ -7,5 +7,6 @@ if (!$ssh->login('pi', 'rotta123')) {
 }
 
 echo $ssh->exec('pwd');
-echo $ssh->exec('ifconfig');
+echo $ssh->exec('cd /home/pi/ownPython/openCV/spybot/');
+echo $ssh->exec('pwd');
 ?>

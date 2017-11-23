@@ -16,3 +16,9 @@ p{
 li{
  background-color: lightblue;
 }
+.logoutLblPos{
+
+   position:fixed;
+   right:10px;
+   top:5px;
+}
