@@ -15,13 +15,14 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM motors ORDER BY idArvo DESC LIMIT 30");
+$result = mysqli_query($con,"SELECT * FROM motors ORDER BY idArvo DESC LIMIT 50");
 
 echo "<table border='1' id='tableID'>
 <tr>
 <th>ID</th>
 <th>Left motor</th>
 <th>Right motor</th>
+<th>Direction</th>
 <th>Timestamp</th>
 </tr>";
 
@@ -31,6 +32,7 @@ echo "<tr>";
 echo "<td>" . $row['idArvo'] . "</td>";
 echo "<td>" . $row['left_motor'] . "</td>";
 echo "<td>" . $row['right_motor'] . "</td>";
+echo "<td>" . $row['suunta'] . "</td>";
 echo "<td>" . $row['Timestamp'] . "</td>";
 echo "</tr>";
 }
