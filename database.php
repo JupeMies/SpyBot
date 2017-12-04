@@ -15,7 +15,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM motors");
+$result = mysqli_query($con,"SELECT * FROM motors ORDER BY idArvo DESC LIMIT 30");
 
 echo "<table border='1' id='tableID'>
 <tr>

@@ -3,6 +3,7 @@ body{
    width: 460px;
    background-color: white;
    border-radius: 50px;
+   margin-left: 20px;
 }
 h1{
    background-color: lightblue;
@@ -13,12 +14,12 @@ h2{
 p{
   background-color: lightblue;
 }
-li{
+a{
  background-color: lightblue;
 }
-.logoutLblPos{
+li{
+  list-style-type: none;
+}
+#link1{
 
-   position:fixed;
-   right:10px;
-   top:5px;
 }
