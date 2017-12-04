@@ -15,6 +15,6 @@ window.onload = function() {
 if (is_file($PathToFile . 'kukkuluuruu.jpg'))
 {
    $FileDetails = stat($PathToFile . 'kukkuluuruu.jpg');
-   echo '<img id="img" src="http://192.168.1.38/output.jpg?=' . dechex($FileDetails['mtime']) . '" />';
+   echo '<img id="img" src="http://192.168.1.41/output.jpg?=' . dechex($FileDetails['mtime']) . '" />';
 }
 ?>

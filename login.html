@@ -1,32 +1,12 @@
-<SCRIPT>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1)
-history.go(-1);
-if (pass1.toLowerCase() == "asd") {
-alert('Welcome to SpyBot. Enjoy your stay! :)');
+<h1>Kirjaudu</h1>
+<form class="" action="<?php echo site_url('login/kirjaudu');?>" method="post">
+  Tunnus <input type="text" name="tunnus" >
+  <input type="submit" name="" value="Kirjaudu">
+</form>
 
-var sessionTimeout = 1; //hours
-var loginDuration = new Date();
-loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
-document.cookie = "CrewCentreSession=Valid; "+loginDuration.toGMTString()+"; path=/";
-
-window.open('index.html');
-break;
+Tämä pitää laittaa index.html alkuun
+<script type="text/javascript">
+if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
+  location.href = "login.html";
 }
-testV+=1;
-var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(-1);
-return " ";
-}
-</SCRIPT>
-<CENTER>
-<FORM>
-<input type="button" value="Access SpyBot" onClick="passWord()">
-</FORM>
-</CENTER>
+</script>
